@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brad's Gun Shop</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" sizes="32x32" href="Favicons/favicon-32x32.png">
+    <link rel="icon" sizes="16x16" href="Favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- [if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> 
+    <![endif] -->
+
+    <style>
+       
+    </style>
+    <script>
+        function save(){
+            localStorage.setItem("apple pie", true);
+        }
+
+        window.onload = function(){
+            var favorite = document.getElementById("favorite");
+
+            if(window.localStorage){
+                var storage = window.localStorage;
+                if(storage.getItem("apple pie") == "true"){
+                    favorite.innerHTML = "Apple pie is one of your favorites!"
+                }
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Beautify code with shift+alt+f -->
+
+    <header id="mainheader">
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.png" height="40" alt="Logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="GunOverview.html">All Guns</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="width: 1000px; margin-left: auto; margin-right: auto;">
+
+        <aside id="leftmenu">
+            <a href="index.html"><img src="Brad's Gun Shop Logo.png" alt="Brad's Gun Shop"></a>
+            <header>
+                <h4 style="text-align: center;">Browse Our Guns</h4>
+            </header>
+            <ul>
+                <li><a href="GunOverview.html">All Guns</a></li>
+                <li><a href="AK's.html">AK's</a></li>
+                <li><a href="M16A2 and C7.html">M16A2 and C7</a></li>
+                <li><a href="#promos">Our Weekly Promotions</a></li>
+            </ul>
+
+            <input type="search" class="searchbox" placeholder="Search Our Store">
+        </aside>
+
+        <main id="main">
+            <article>
+                <header>
+                    <h1 style="font-size:35px;color:#000000">AK-12</h1>
+                </header>
+                <figure>
+                    <a href="images/AK12.JPG" target="_blank"><img src="images/AK12.JPG" width="600" alt="AK-12"></a>
+                    <figcaption>The AK-12 is a Russian assault rifle chambered in 5.45×39mm designed and manufactured by
+                        the Kalashnikov Concern (formerly Izhmash), making it the fifth generation of Kalashnikov
+                        rifles.</figcaption>
+                </figure>
+
+                <p>
+                    <button onclick="save()" type="button">Save as favorite</button>
+                    <span id="favorite"></span>
+                </p>
+
+                <div style="background-color:#f8f4f1">
+                    <h1>Price: $1000</h1>
+                    <h2>Description</h2>
+                    <p>
+                        The AK-12 is chambered in 5.45×39mm, features a barrel length of 415 mm (16.3 in), a maximum
+                        firing range of <em>800 m (870 yd)</em>, and a standard magazine capacity of 30 rounds.
+                    </p>
+                    <p>
+                        This gun is available <strong>every day</strong>, with customizations available.
+                        <span style="color:#9f4dcf; font-weight:bold">
+                            The AK-12 represents the Russian military entrance into the realm of the modern carbine.
+                            Think of the AK-12 as a modernized variant of the AK 74 rifle. It’s very much a modern
+                            variant of the classic AK series, while adopting some of the modularity of the M4 to push
+                            the old design forward.
+                        </span> With an AK-12, you'll have your upgraded Russian Communist version of America's no
+                        recoil M4!
+                    </p>
+                    <p>
+                    <blockquote>
+                        Russia thinks it's great. Others think it's bad, then proceed to get shot and killed by an AK-12
+                        - Anonymous
+                    </blockquote>
+                    </p>
+                    <p><small>
+                            Note that those under 18 are not allowed to by guns in the US. Failure to comply can result
+                            in legal trouble. See the list of possible punishments below.
+                        </small></p>
+                    <p><small>
+                            We care about your safety as much as you do. See our terms page for more info.
+                        </small></p>
+                    <hr>
+
+                    <h2>How to use this gun</h2>
+                    <ol>
+                        <li>
+                            First, insert ammunition into the AK-12
+                        </li>
+                        <li>
+                            Then, press down the safety and make sure it's off. Choose a firing mode: 2-round burst,
+                            automatic, whatever
+                        </li>
+                        <li>
+                            Then, aim down with the sight
+                        </li>
+                        <li>
+                            Then, shoot. EZ
+                        </li>
+                    </ol>
+
+                    <ol start="5">
+                        <li>If something goes wrong, we start all over again!</li>
+                    </ol>
+
+                    <h3>Possible Punishments</h3>
+                    <p>Please note that this list contains the most common possible punishments for minors buying and
+                        using guns!</p>
+                    <ul>
+                        <li>Probation</li>
+                        <li>One year of imprisonment</li>
+                        <ul>
+                            <li>You gonna waste a year of your life in prison, and you won't have a job or know where
+                                your family is when you get released!</li>
+                        </ul>
+                        <li>Fines of up to $2500 in Michigan, for instance</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>
+                Our address is:
+            <address>Brad's Gun Shop - Times Street 929, Dallas, Texas</address>
+            </p>
+            <p>
+                Contact us via <a href="mailto:s-basher@lwsd.org">email</a>
+            </p>
+            <hr>
+            <small>&copy; 2022 Brad's Gun Shop - All rights reserved</small>
+            <p><small><a href="https://www.snowball.be">Created by Snowball</a></small></p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
